@@ -7,7 +7,9 @@ test('render test', () => {
     render(<Component />)
 
     // 2. 找到元件中某元素位置
-    const button = screen.getByText(/點我/i)
+    // getByText要用正規表達式
+    // const button = screen.getByText(/點我/i)
+    const button = screen.getByRole('button')
 
     // 3. 對該元素進行操作和互動
     fireEvent.click(button)
