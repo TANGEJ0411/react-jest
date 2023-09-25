@@ -1,5 +1,9 @@
 import { authInput, authName, authPw, authEmail, authGender, authPhone } from "../Regi";
 
+
+// TODO:或許這邊的測試可以用mock的概念處理?
+
+
 // TDD 模式
 // describe可以巢狀群組分層測試
 describe('註冊情境', () => {
