@@ -19,5 +19,7 @@ test('input change correct', async () => {
 
 
     expect(textbox.value).toBe('World!');
+
+    // 若render沒有進act這邊的screen.debug()會有一點錯誤
     screen.debug();
 })
